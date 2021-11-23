@@ -24,6 +24,7 @@
     position: relative;
     cursor: pointer;
     animation: navLinkFade .5s ease forwards 1/7+1s;
+    font-size: large;
 }
 .Navlinks::after{
     content: '';
@@ -42,14 +43,14 @@
     width: 100%;
 }
 .logo img{
-    height: 3rem;
+    height: 4.5rem;
     margin-left: 3rem;
 }
 
 .Navbar-Button{
     color: white;
-    height: 22px;
-    width: 7rem;
+    height: 30px;
+    width: 8rem;
     background: #2F3778;
     border: none;
     border-radius: 29px;
