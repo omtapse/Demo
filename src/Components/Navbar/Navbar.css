@@ -1,0 +1,56 @@
+.Navbar{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #ececec;
+    display: flex;
+    position: relative;
+    color: #2F3778;
+}
+
+.nav-items{
+    width: 60%;
+    align-self: center;
+    position: absolute;
+    right: 0;
+}
+
+.nav-items ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.Navlinks{
+    position: relative;
+    cursor: pointer;
+    animation: navLinkFade .5s ease forwards 1/7+1s;
+}
+.Navlinks::after{
+    content: '';
+    width: 0;
+    background-color: #2F3778;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition:  transform ease 0.2s ;
+    transform: translate(-50%);
+    transition: width 0.3s;
+}
+
+.Navlinks:hover::after{
+    width: 100%;
+}
+.logo img{
+    height: 3rem;
+    margin-left: 3rem;
+}
+
+.Navbar-Button{
+    color: white;
+    height: 22px;
+    width: 7rem;
+    background: #2F3778;
+    border: none;
+    border-radius: 29px;
+}
